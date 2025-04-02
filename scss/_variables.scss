@@ -1,0 +1,17 @@
+@use "helpers" as *;
+
+:root {
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --color-gray: #f0f0f0;
+
+  --color-accent: #0077ff;
+
+  --font-family-base: "Inter", sans-serif;
+  --font-family-accent: "Montserrat", sans-serif;
+
+  --container-width: #{rem(1240)}; // Максимальный размер контейнера
+  --container-padding-x: #{rem(20)}; // Минимальный отступ padding от контейнера
+
+  --transition-duration: 0.2s; // Скорость анимаций
+}
