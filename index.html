@@ -1,22 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Site Name | Home</title>
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./scripts/main.js" type="module" defer></script>
   </head>
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quod
-      voluptate optio nesciunt natus, consequuntur voluptates autem corrupti vel
-      beatae nulla magnam, distinctio culpa vero est consequatur quos eaque
-      laborum?
-    </p>
+    <header class="header" data-js-header>
+      <div class="header__inner container">
+        <a class="logo">
+          <img class="logo__image" src="./images/logo.png" alt="Логотип" />
+        </a>
+        <div class="header__overlay">
+          <nav class="header__menu" data-js-header-menu>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#!">Услуги</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#!">Сотрудники</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#!">Отзывы</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#!">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="soc1als">
+            <div class="soc1als__title">Связаться</div>
+            <ul class="soc1als__list">
+              <li class="soc1als__item">
+                <a class="soc1als__link" href="#!">
+                  <img
+                    class="soc1als__image"
+                    src="./images/socials/phone.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a class="soc1als__link" href="#!">
+                  <img
+                    class="soc1als__image"
+                    src="./images/socials/vk.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a class="soc1als__link" href="#!">
+                  <img
+                    class="soc1als__image"
+                    src="./images/socials/whatsapp.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="burger-button visible-mobile"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
   </body>
 </html>

@@ -1,0 +1,21 @@
+@use "helpers" as *;
+
+:root {
+  --color-light: #ffffff;
+  --color-dark: #605247;
+  --color-gray: #acacac;
+
+  --color-accent: #ead3cb;
+
+  --font-family-base: "Inter", sans-serif;
+  --font-family-accent: "Montserrat", sans-serif;
+
+  --container-width: 1260px; // Максимальный размер контейнера
+  --container-padding-x: 20px; // Минимальный отступ padding от контейнера
+
+  @include mobile-xs {
+    --container-padding-x: 10px;
+  }
+
+  --transition-duration: 0.2s; // Скорость анимаций
+}
