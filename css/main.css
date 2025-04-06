@@ -689,12 +689,12 @@ button[aria-label]::before {
 }
 @media (width <= 480.98px) {
   .hero__slider {
-    margin-top: 130px;
+    margin-top: 110px;
   }
 }
 @media (width <= 389.98px) {
   .hero__slider {
-    margin-top: 110px;
+    margin-top: 90px;
   }
 }
 @media (width <= 1280.98px) {
@@ -709,12 +709,12 @@ button[aria-label]::before {
 }
 @media (width <= 480.98px) {
   .hero {
-    margin-top: 80px;
+    margin-top: 60px;
   }
 }
 @media (width <= 389.98px) {
   .hero {
-    margin-top: 60px;
+    margin-top: 40px;
   }
 }
 
