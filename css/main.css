@@ -679,6 +679,17 @@ button[aria-label]::before {
     padding: 10px 20px;
   }
 }
+.hero__button:hover {
+  background-color: var(--color-light);
+  outline: 1px solid var(--color-dark);
+}
+.hero__button--light {
+  outline: 1px solid var(--color-dark);
+}
+.hero__button--light:hover {
+  background-color: var(--color-accent);
+  outline: none;
+}
 .hero__slider {
   background-color: var(--color-accent);
   border-radius: 60px;
@@ -978,10 +989,6 @@ button[aria-label]::before {
 
 .background-accent {
   background-color: var(--color-accent);
-}
-
-.outline {
-  outline: 1px solid var(--color-dark);
 }
 
 body {
