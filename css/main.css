@@ -709,12 +709,12 @@ button[aria-label]::before {
 }
 @media (width <= 480.98px) {
   .hero {
-    margin-top: 60px;
+    margin-top: 70px;
   }
 }
 @media (width <= 389.98px) {
   .hero {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 }
 
