@@ -844,13 +844,8 @@ button[aria-label]::before {
 }
 @media (width <= 1439.98px) {
   .services-card {
-    width: 80%;
-    align-self: center;
-  }
-}
-@media (width <= 1279.98px) {
-  .services-card {
     width: 100%;
+    align-self: center;
   }
 }
 @media (width <= 767.98px) {
@@ -966,7 +961,7 @@ button[aria-label]::before {
   border: none;
   border-radius: 100px;
   background-color: var(--color-accent);
-  background-image: url(./../../images/services/arrow.svg);
+  background-image: url(../../images/services/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
 }

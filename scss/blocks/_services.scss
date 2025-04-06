@@ -91,12 +91,8 @@
     }
 
     @include laptop {
-      width: 80%;
-      align-self: center;
-    }
-
-    @include laptop-s {
       width: 100%;
+      align-self: center;
     }
 
     @include mobile {
@@ -212,7 +208,7 @@
       border: none;
       border-radius: 100px;
       background-color: var(--color-accent);
-      background-image: url(./../../images/services/arrow.svg);
+      background-image: url(../../images/services/arrow.svg);
       background-repeat: no-repeat;
       background-position: center;
 
