@@ -1,10 +1,10 @@
 @use "./functions" as *;
 
-$laptop: 1440.98px;
-$laptop-s: 1280.98px;
+$laptop: 1439.98px;
+$laptop-s: 1279.98px;
 $tablet: 1023.98px;
 $mobile: 767.98px;
-$mobile-s: 480.98px;
+$mobile-s: 479.98px;
 $mobile-xs: 389.98px;
 // Дробное значение *.98 для изключения багов с определением точной ширины viewport
 

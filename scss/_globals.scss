@@ -56,7 +56,17 @@ h1,
 }
 h2,
 .h2 {
-  // @include fluid-text(50, 32);
+  font-weight: 300;
+  font-size: 72px;
+  letter-spacing: -0.03em;
+
+  @include tablet {
+    font-size: 60px;
+  }
+
+  @include mobile {
+    font-size: 48px;
+  }
 }
 
 h3,

@@ -10,6 +10,7 @@
 @use "./blocks/burger-button";
 @use "./blocks/hero";
 @use "./blocks/swiper";
+@use "./blocks/services";
 
 .background-accent {
   background-color: var(--color-accent);
@@ -23,3 +24,11 @@
 body {
   padding-bottom: 500px;
 }
+
+// .header {
+//   display: none;
+// }
+
+// .hero {
+//   display: none;
+// }
