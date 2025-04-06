@@ -879,22 +879,22 @@ button[aria-label]::before {
     background-position: top;
   }
   .services-card__container--facial-care {
-    background-image: url(./../../images/services/icons/facial-care.svg);
+    background-image: url(./../images/services/icons/facial-care.svg);
   }
   .services-card__container--hair-care {
-    background-image: url(./../../images/services/icons/hair-care.svg);
+    background-image: url(./../images/services/icons/hair-care.svg);
   }
   .services-card__container--massage {
-    background-image: url(./../../images/services/icons/massage.svg);
+    background-image: url(./../images/services/icons/massage.svg);
   }
   .services-card__container--spa-complexes {
-    background-image: url(./../../images/services/icons/spa-complexes.svg);
+    background-image: url(./../images/services/icons/spa-complexes.svg);
   }
   .services-card__container--manicure {
-    background-image: url(./../../images/services/icons/manicure.svg);
+    background-image: url(./../images/services/icons/manicure.svg);
   }
   .services-card__container--beauty-look {
-    background-image: url(./../../images/services/icons/beauty-look.svg);
+    background-image: url(./../images/services/icons/beauty-look.svg);
   }
 }
 .services-card__image {
@@ -961,7 +961,7 @@ button[aria-label]::before {
   border: none;
   border-radius: 100px;
   background-color: var(--color-accent);
-  background-image: url(../../images/services/arrow.svg);
+  background-image: url(./../images/services/arrow.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
