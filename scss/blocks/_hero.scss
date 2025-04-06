@@ -1,0 +1,168 @@
+@use "../helpers/" as *;
+
+.hero {
+  margin-top: 200px;
+
+  &__body {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: fit-content;
+    border-bottom: 1px solid var(--color-border);
+
+    @include tablet {
+      border-bottom: none;
+    }
+
+    @include mobile {
+      text-align: center;
+    }
+
+    @include mobile-s {
+      gap: 25px;
+    }
+  }
+
+  &__title {
+    max-width: 450px;
+
+    @include laptop-s {
+      max-width: 390px;
+      font-size: 60px;
+    }
+
+    @include tablet {
+      max-width: 320px;
+      font-size: 48px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+    @include mobile-s {
+      font-size: 38px;
+    }
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 34px;
+    max-width: 500px;
+    line-height: 1.2;
+
+    @include laptop-s {
+      font-size: 26px;
+      max-width: 350px;
+    }
+
+    @include tablet {
+      font-size: 22px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+
+    @include mobile-s {
+      font-size: 20px;
+    }
+  }
+
+  &__button-list {
+    display: flex;
+    gap: 25px;
+    font-size: 24px;
+
+    @include mobile {
+      justify-content: center;
+    }
+
+    @include mobile-xs {
+      gap: 15px;
+    }
+  }
+
+  &__button {
+    border-radius: 100px;
+    padding: 18px 48px;
+    background-color: transparent;
+    border: none;
+    color: var(--color-dark);
+
+    @include laptop-s {
+      font-size: 20px;
+      padding: 14px 36px;
+    }
+
+    @include tablet {
+      font-size: 18px;
+      padding: 12px 24px;
+    }
+
+    @include mobile-s {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+
+  &__slider {
+    background-color: var(--color-accent);
+    border-radius: 60px;
+    width: 620px;
+    height: 590px;
+
+    @include laptop-s {
+      width: 520px;
+      height: 477px;
+    }
+
+    @include tablet {
+      width: 342px;
+      height: 276px;
+      align-self: end;
+    }
+
+    @include mobile {
+      align-self: normal;
+      margin-top: 180px;
+      width: 100%;
+      height: auto;
+    }
+
+    @include mobile-s {
+      margin-top: 130px;
+    }
+
+    @include mobile-xs {
+      margin-top: 110px;
+    }
+  }
+
+  @include laptop-s {
+    margin-top: 130px;
+  }
+
+  @include tablet {
+    margin-top: 100px;
+  }
+
+  @include mobile-s {
+    margin-top: 80px;
+  }
+
+  @include mobile-xs {
+    margin-top: 60px;
+  }
+}

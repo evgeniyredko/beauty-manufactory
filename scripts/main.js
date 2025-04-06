@@ -1,26 +1,19 @@
 // import "./typed.js"; // Библиотека для печатания текста
 import Header from "./Header.js";
 
-function onEntry(entry) {
-  entry.forEach((change) => {
-    if (change.isIntersecting) {
-      change.target.classList.add("element-show");
-    }
-  });
-}
+// Слайдер Swiper
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
+  direction: "horizontal",
+  allowTouchMove: false,
+  autoplay: {
+    delay: 3500,
+  },
+});
 
-let options = {
-  threshold: [0.2],
-};
-let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll(
-  "li, h1, h2, .footer, .logo, .theme, .burger-button"
-);
-
-for (let elm of elements) {
-  observer.observe(elm);
-}
-
+// Закрытие бургер-меню псле клика на пункт меню
 var menuLinks = document.querySelectorAll(".header__menu .header__menu-link");
 menuLinks.forEach(function (link) {
   link.addEventListener("click", function () {

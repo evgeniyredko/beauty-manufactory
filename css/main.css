@@ -221,6 +221,7 @@ svg * {
   --color-dark: #605247;
   --color-gray: #acacac;
   --color-accent: #ead3cb;
+  --color-border: #acacac;
   --font-family-base: "Inter", sans-serif;
   --font-family-accent: "Montserrat", sans-serif;
   --container-width: 1260px;
@@ -274,6 +275,7 @@ body {
   flex-direction: column;
   font-family: var(--font-family-base);
   color: var(--color-dark);
+  letter-spacing: -0.02em;
 }
 
 main {
@@ -283,6 +285,14 @@ main {
 /* prettier-ignore */
 /* prettier-ignore */
 /* prettier-ignore */
+h1,
+.h1 {
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 0.9;
+  letter-spacing: -0.02em;
+}
+
 a,
 button,
 label,
@@ -345,6 +355,7 @@ button[aria-label]::before {
 .header__inner {
   display: flex;
   padding-block: 30px;
+  letter-spacing: 0;
 }
 @media (width <= 1023.98px) {
   .header__inner {
@@ -390,6 +401,7 @@ button[aria-label]::before {
     overflow-y: auto;
     align-items: center;
     text-align: center;
+    z-index: 2;
   }
   .header__menu:not(.is-active) {
     opacity: 0;
@@ -518,4 +530,213 @@ button[aria-label]::before {
 .burger-button__line:last-child {
   align-self: end;
   width: 55%;
+}
+
+.hero {
+  margin-top: 200px;
+}
+.hero__body {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+@media (width <= 767.98px) {
+  .hero__body {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: fit-content;
+  border-bottom: 1px solid var(--color-border);
+}
+@media (width <= 1023.98px) {
+  .hero__info {
+    border-bottom: none;
+  }
+}
+@media (width <= 767.98px) {
+  .hero__info {
+    text-align: center;
+  }
+}
+@media (width <= 480.98px) {
+  .hero__info {
+    gap: 25px;
+  }
+}
+.hero__title {
+  max-width: 450px;
+}
+@media (width <= 1280.98px) {
+  .hero__title {
+    max-width: 390px;
+    font-size: 60px;
+  }
+}
+@media (width <= 1023.98px) {
+  .hero__title {
+    max-width: 320px;
+    font-size: 48px;
+  }
+}
+@media (width <= 767.98px) {
+  .hero__title {
+    max-width: 100%;
+  }
+}
+@media (width <= 480.98px) {
+  .hero__title {
+    font-size: 38px;
+  }
+}
+.hero__description {
+  font-weight: 300;
+  font-size: 34px;
+  max-width: 500px;
+  line-height: 1.2;
+}
+@media (width <= 1280.98px) {
+  .hero__description {
+    font-size: 26px;
+    max-width: 350px;
+  }
+}
+@media (width <= 1023.98px) {
+  .hero__description {
+    font-size: 22px;
+  }
+}
+@media (width <= 767.98px) {
+  .hero__description {
+    max-width: 100%;
+  }
+}
+@media (width <= 480.98px) {
+  .hero__description {
+    font-size: 20px;
+  }
+}
+.hero__button-list {
+  display: flex;
+  gap: 25px;
+  font-size: 24px;
+}
+@media (width <= 767.98px) {
+  .hero__button-list {
+    justify-content: center;
+  }
+}
+@media (width <= 389.98px) {
+  .hero__button-list {
+    gap: 15px;
+  }
+}
+.hero__button {
+  border-radius: 100px;
+  padding: 18px 48px;
+  background-color: transparent;
+  border: none;
+  color: var(--color-dark);
+}
+@media (width <= 1280.98px) {
+  .hero__button {
+    font-size: 20px;
+    padding: 14px 36px;
+  }
+}
+@media (width <= 1023.98px) {
+  .hero__button {
+    font-size: 18px;
+    padding: 12px 24px;
+  }
+}
+@media (width <= 480.98px) {
+  .hero__button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+.hero__slider {
+  background-color: var(--color-accent);
+  border-radius: 60px;
+  width: 620px;
+  height: 590px;
+}
+@media (width <= 1280.98px) {
+  .hero__slider {
+    width: 520px;
+    height: 477px;
+  }
+}
+@media (width <= 1023.98px) {
+  .hero__slider {
+    width: 342px;
+    height: 276px;
+    align-self: end;
+  }
+}
+@media (width <= 767.98px) {
+  .hero__slider {
+    align-self: normal;
+    margin-top: 180px;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (width <= 480.98px) {
+  .hero__slider {
+    margin-top: 130px;
+  }
+}
+@media (width <= 389.98px) {
+  .hero__slider {
+    margin-top: 110px;
+  }
+}
+@media (width <= 1280.98px) {
+  .hero {
+    margin-top: 130px;
+  }
+}
+@media (width <= 1023.98px) {
+  .hero {
+    margin-top: 100px;
+  }
+}
+@media (width <= 480.98px) {
+  .hero {
+    margin-top: 80px;
+  }
+}
+@media (width <= 389.98px) {
+  .hero {
+    margin-top: 60px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  margin-top: -110px;
+  border-radius: 60px;
+}
+@media (width <= 767.98px) {
+  .swiper-image {
+    margin-inline: auto;
+  }
+}
+
+.background-accent {
+  background-color: var(--color-accent);
+}
+
+.outline {
+  outline: 1px solid var(--color-dark);
+}
+
+body {
+  padding-bottom: 500px;
 }/*# sourceMappingURL=main.css.map */

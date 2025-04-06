@@ -27,7 +27,12 @@
     />
     <title>Мануфактура красоты | Главная страница</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="./scripts/main.js" type="module" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header" data-js-header>
@@ -97,5 +102,57 @@
         </button>
       </div>
     </header>
+    <main>
+      <section class="hero container" id="#hero">
+        <div class="hero__inner">
+          <div class="hero__body">
+            <div class="hero__info">
+              <h1 class="hero__title">Мануфактура красоты</h1>
+              <p class="hero__description">
+                Создаём красоту учитывая индивидуальные потребности наших
+                клиентов
+              </p>
+              <ul class="hero__button-list">
+                <li class="hero__button-item">
+                  <button class="hero__button background-accent">
+                    Записаться
+                  </button>
+                </li>
+                <li class="hero__button-item">
+                  <button class="hero__button outline">Консультация</button>
+                </li>
+              </ul>
+            </div>
+            <div class="hero__slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-image"
+                      src="./images/hero/slider/image-1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-image"
+                      src="./images/hero/slider/image-2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-image"
+                      src="./images/hero/slider/image-3.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -8,3 +8,18 @@
 @use "./blocks/header";
 @use "./blocks/soc1als";
 @use "./blocks/burger-button";
+@use "./blocks/hero";
+@use "./blocks/swiper";
+
+.background-accent {
+  background-color: var(--color-accent);
+}
+
+.outline {
+  outline: 1px solid var(--color-dark);
+}
+
+// Временно
+body {
+  padding-bottom: 500px;
+}

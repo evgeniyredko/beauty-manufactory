@@ -1,0 +1,13 @@
+@use "../helpers/" as *;
+
+.swiper {
+  width: 100%;
+  margin-top: -110px;
+  border-radius: 60px;
+
+  &-image {
+    @include mobile {
+      margin-inline: auto;
+    }
+  }
+}
