@@ -1,0 +1,129 @@
+@use "../helpers/" as *;
+
+.benefits {
+  margin-top: 220px;
+
+  @include tablet {
+    margin-top: 180px;
+  }
+
+  @include mobile {
+    margin-top: 140px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 80px;
+
+    @include laptop-s {
+      justify-content: center;
+
+      & li:nth-child(2) {
+        order: -1;
+      }
+    }
+
+    @include tablet {
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    padding: 44px 40px 60px 30px;
+    gap: 28px;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    justify-content: space-between;
+
+    @include tablet {
+      width: 321px;
+      padding: 30px 40px 40px 30px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+    @include mobile-s {
+      padding-right: 30px;
+      gap: 25px;
+    }
+
+    &--title {
+      padding: 0;
+      background-image: url(./../images/benefits/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      border-radius: 0;
+      background-color: transparent;
+
+      @include mobile {
+        background: none;
+      }
+
+      @include mobile-s {
+        text-align: center;
+      }
+
+      & h3 {
+        font-weight: 300;
+        font-size: 94px;
+        line-height: 1.09;
+        letter-spacing: -0.05em;
+        margin-top: -18px;
+        margin-left: 8px;
+
+        @include mobile {
+          font-size: 68px;
+        }
+
+        @include mobile-s {
+          text-align: center;
+          font-size: 48px;
+        }
+      }
+    }
+
+    &--accent {
+      background-color: var(--color-accent);
+
+      @include laptop-s {
+        background-color: #f4f4f4;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-right: 10px;
+
+    @include mobile-s {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.11;
+    letter-spacing: -0.03em;
+
+    @include mobile {
+      & br {
+        display: none;
+      }
+    }
+
+    @include mobile-s {
+      text-align: justify;
+    }
+  }
+}

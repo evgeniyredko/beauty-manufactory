@@ -987,6 +987,139 @@ button[aria-label]::before {
   }
 }
 
+.benefits {
+  margin-top: 220px;
+}
+@media (width <= 1023.98px) {
+  .benefits {
+    margin-top: 180px;
+  }
+}
+@media (width <= 767.98px) {
+  .benefits {
+    margin-top: 140px;
+  }
+}
+.benefits__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 80px;
+}
+@media (width <= 1279.98px) {
+  .benefits__list {
+    justify-content: center;
+  }
+  .benefits__list li:nth-child(2) {
+    order: -1;
+  }
+}
+@media (width <= 1023.98px) {
+  .benefits__list {
+    gap: 40px;
+  }
+}
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  padding: 44px 40px 60px 30px;
+  gap: 28px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  justify-content: space-between;
+}
+@media (width <= 1023.98px) {
+  .benefits__item {
+    width: 321px;
+    padding: 30px 40px 40px 30px;
+  }
+}
+@media (width <= 767.98px) {
+  .benefits__item {
+    width: 100%;
+  }
+}
+@media (width <= 479.98px) {
+  .benefits__item {
+    padding-right: 30px;
+    gap: 25px;
+  }
+}
+.benefits__item--title {
+  padding: 0;
+  background-image: url(./../images/benefits/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  border-radius: 0;
+  background-color: transparent;
+}
+@media (width <= 767.98px) {
+  .benefits__item--title {
+    background: none;
+  }
+}
+@media (width <= 479.98px) {
+  .benefits__item--title {
+    text-align: center;
+  }
+}
+.benefits__item--title h3 {
+  font-weight: 300;
+  font-size: 94px;
+  line-height: 1.09;
+  letter-spacing: -0.05em;
+  margin-top: -18px;
+  margin-left: 8px;
+}
+@media (width <= 767.98px) {
+  .benefits__item--title h3 {
+    font-size: 68px;
+  }
+}
+@media (width <= 479.98px) {
+  .benefits__item--title h3 {
+    text-align: center;
+    font-size: 48px;
+  }
+}
+.benefits__item--accent {
+  background-color: var(--color-accent);
+}
+@media (width <= 1279.98px) {
+  .benefits__item--accent {
+    background-color: #f4f4f4;
+  }
+}
+.benefits__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-right: 10px;
+}
+@media (width <= 479.98px) {
+  .benefits__title {
+    text-align: center;
+  }
+}
+.benefits__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+@media (width <= 767.98px) {
+  .benefits__text br {
+    display: none;
+  }
+}
+@media (width <= 479.98px) {
+  .benefits__text {
+    text-align: justify;
+  }
+}
+
 .background-accent {
   background-color: var(--color-accent);
 }
