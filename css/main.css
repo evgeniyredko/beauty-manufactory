@@ -777,7 +777,7 @@ button[aria-label]::before {
   width: 100px;
 }
 .staff__slider .swiper-button-next {
-  background-image: url(./../../images/staff/arrow-right.svg);
+  background-image: url(./../images/staff/arrow-right.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 32px;
@@ -788,7 +788,7 @@ button[aria-label]::before {
   content: "";
 }
 .staff__slider .swiper-button-prev {
-  background-image: url(./../../images/staff/arrow-left.svg);
+  background-image: url(./../images/staff/arrow-left.svg);
   background-repeat: no-repeat;
   background-position: center;
   width: 32px;
