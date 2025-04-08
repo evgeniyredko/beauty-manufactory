@@ -782,7 +782,7 @@ button[aria-label]::before {
   background-position: center;
   width: 32px;
   height: 14px;
-  right: var(--swiper-navigation-sides-offset, -22px);
+  right: var(--swiper-navigation-sides-offset, -28px);
 }
 .staff__slider .swiper-button-next::after {
   content: "";
