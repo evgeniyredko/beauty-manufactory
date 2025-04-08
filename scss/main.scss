@@ -12,6 +12,7 @@
 @use "./blocks/swiper";
 @use "./blocks/services";
 @use "./blocks/benefits";
+@use "./blocks/staff";
 
 .background-accent {
   background-color: var(--color-accent);
@@ -31,5 +32,9 @@ body {
 // }
 
 // .services {
+//   display: none;
+// }
+
+// .benefits {
 //   display: none;
 // }

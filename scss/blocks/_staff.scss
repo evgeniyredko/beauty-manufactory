@@ -1,0 +1,58 @@
+@use "../helpers/" as *;
+
+.staff {
+  margin-top: 100px;
+
+  &__slide-body {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__info {
+    position: relative;
+    margin-top: 184px;
+    width: 520px;
+    letter-spacing: 0.1em;
+  }
+
+  &__name {
+    font-size: 58px;
+  }
+
+  &__text {
+    margin-top: 22px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    padding-left: 7px;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+  }
+
+  &__image {
+    position: relative;
+    width: 560px;
+  }
+
+  &__image-background {
+    position: absolute;
+    inset: 0;
+    top: 90px;
+    background-color: var(--color-accent);
+    display: block;
+    z-index: -1;
+    border-radius: 70px;
+  }
+
+  & .soc1als {
+    &__list {
+      gap: 15px;
+      padding: 5px;
+    }
+
+    &__link {
+      width: 40px;
+    }
+  }
+}

@@ -312,6 +312,11 @@ h2,
   }
 }
 
+h3,
+.h3 {
+  font-weight: 400;
+}
+
 a,
 button,
 label,
@@ -748,15 +753,54 @@ button[aria-label]::before {
   }
 }
 
-.swiper {
+.hero__slider .swiper {
   width: 100%;
   margin-top: -110px;
   border-radius: 60px;
 }
 @media (width <= 767.98px) {
-  .swiper-image {
+  .hero__slider .swiper-image {
     margin-inline: auto;
   }
+}
+
+.staff__slider .swiper {
+  margin-top: -100px;
+}
+.staff__slider .swiper-image {
+  border-radius: 70px;
+}
+.staff__slider .swiper-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100px;
+}
+.staff__slider .swiper-button-next {
+  background-image: url(./../../images/staff/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 14px;
+  right: var(--swiper-navigation-sides-offset, -22px);
+}
+.staff__slider .swiper-button-next::after {
+  content: "";
+}
+.staff__slider .swiper-button-prev {
+  background-image: url(./../../images/staff/arrow-left.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 32px;
+  height: 14px;
+}
+.staff__slider .swiper-button-prev::after {
+  content: "";
+}
+.staff__slider .swiper-index-current {
+  position: absolute;
+  bottom: 2px;
+  left: 54px;
 }
 
 .services {
@@ -1118,6 +1162,53 @@ button[aria-label]::before {
   .benefits__text {
     text-align: justify;
   }
+}
+
+.staff {
+  margin-top: 100px;
+}
+.staff__slide-body {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.staff__info {
+  position: relative;
+  margin-top: 184px;
+  width: 520px;
+  letter-spacing: 0.1em;
+}
+.staff__name {
+  font-size: 58px;
+}
+.staff__text {
+  margin-top: 22px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  padding-left: 7px;
+  font-size: 20px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+.staff__image {
+  position: relative;
+  width: 560px;
+}
+.staff__image-background {
+  position: absolute;
+  inset: 0;
+  top: 90px;
+  background-color: var(--color-accent);
+  display: block;
+  z-index: -1;
+  border-radius: 70px;
+}
+.staff .soc1als__list {
+  gap: 15px;
+  padding: 5px;
+}
+.staff .soc1als__link {
+  width: 40px;
 }
 
 .background-accent {

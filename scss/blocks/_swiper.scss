@@ -1,6 +1,6 @@
 @use "../helpers/" as *;
 
-.swiper {
+.hero__slider .swiper {
   width: 100%;
   margin-top: -110px;
   border-radius: 60px;
@@ -9,5 +9,51 @@
     @include mobile {
       margin-inline: auto;
     }
+  }
+}
+
+.staff__slider .swiper {
+  margin-top: -100px;
+
+  &-image {
+    border-radius: 70px;
+  }
+
+  &-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100px;
+  }
+
+  &-button-next {
+    background-image: url(./../../images/staff/arrow-right.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 14px;
+    right: var(--swiper-navigation-sides-offset, -22px);
+
+    &::after {
+      content: "";
+    }
+  }
+
+  &-button-prev {
+    background-image: url(./../../images/staff/arrow-left.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 32px;
+    height: 14px;
+
+    &::after {
+      content: "";
+    }
+  }
+
+  &-index-current {
+    position: absolute;
+    bottom: 2px;
+    left: 54px;
   }
 }
