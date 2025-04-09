@@ -58,6 +58,11 @@
     @include mobile-s {
       align-self: center;
     }
+
+    &:hover {
+      outline: 1px solid var(--color-dark);
+      transform: scale(1.1);
+    }
   }
 
   &__list {
