@@ -13,6 +13,7 @@
 @use "./blocks/services";
 @use "./blocks/benefits";
 @use "./blocks/staff";
+@use "./blocks/promo";
 
 .background-accent {
   background-color: var(--color-accent);
@@ -23,18 +24,22 @@ body {
   padding-bottom: 500px;
 }
 
-// .header {
-//   display: none;
-// }
+.header {
+  display: none;
+}
 
-// .hero {
-//   display: none;
-// }
+.hero {
+  display: none;
+}
 
-// .services {
-//   display: none;
-// }
+.services {
+  display: none;
+}
 
-// .benefits {
-//   display: none;
-// }
+.benefits {
+  display: none;
+}
+
+.staff {
+  display: none;
+}

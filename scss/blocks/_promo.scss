@@ -1,0 +1,126 @@
+@use "../helpers/" as *;
+
+.promo {
+  margin-top: 100px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+
+    @include laptop-s {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  &__start {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-accent);
+    border-radius: 30px;
+    padding: 50px 50px 35px 40px;
+    gap: 35px;
+
+    @include mobile {
+      padding: 30px;
+    }
+
+    @include mobile-xs {
+      padding: 20px;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+
+    @include mobile {
+      font-size: 40px;
+    }
+
+    @include mobile-s {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  &__button {
+    border-radius: 100px;
+    padding: 16px 67px;
+    background-color: var(--color-light);
+    border: none;
+    width: fit-content;
+
+    @include mobile-s {
+      align-self: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    padding: 57px 40px 54px 37px;
+    width: 270px;
+    gap: 15px;
+
+    @include laptop-s {
+      width: 100%;
+
+      & br {
+        display: none;
+      }
+    }
+
+    @include mobile {
+      padding: 30px;
+    }
+
+    @include mobile-s {
+      width: 100%;
+
+      & br {
+        display: block;
+      }
+    }
+
+    @include mobile-xs {
+      padding: 20px;
+    }
+  }
+
+  &__number {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 1;
+
+    @include mobile {
+      font-size: 50px;
+    }
+
+    @include mobile-xs {
+      font-size: 40px;
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.14;
+    letter-spacing: -0.04em;
+
+    @include mobile-s {
+      font-size: 20px;
+    }
+  }
+}
