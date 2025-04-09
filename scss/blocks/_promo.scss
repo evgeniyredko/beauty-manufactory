@@ -53,6 +53,7 @@
     background-color: var(--color-light);
     border: none;
     width: fit-content;
+    color: var(--color-dark);
 
     @include mobile-s {
       align-self: center;

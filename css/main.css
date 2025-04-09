@@ -1365,6 +1365,7 @@ button[aria-label]::before {
   background-color: var(--color-light);
   border: none;
   width: fit-content;
+  color: var(--color-dark);
 }
 @media (width <= 479.98px) {
   .promo__button {
