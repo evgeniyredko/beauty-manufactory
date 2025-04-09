@@ -30,6 +30,12 @@ const staff_swiper = new Swiper(".staff__slider > .swiper", {
     disableOnInteraction: true,
     pauseOnMouseEnter: true,
   },
+  breakpoints: {
+    // when window width is >= 320px
+    767: {
+      spaceBetween: 40,
+    },
+  },
 });
 
 // Закрытие бургер-меню псле клика на пункт меню

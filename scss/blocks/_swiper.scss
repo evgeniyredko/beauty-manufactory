@@ -15,6 +15,10 @@
 .staff__slider .swiper {
   margin-top: -100px;
 
+  @include laptop-s {
+    margin-top: 0;
+  }
+
   &-image {
     border-radius: 70px;
   }
@@ -24,6 +28,15 @@
     bottom: 20px;
     left: 0;
     width: 100px;
+
+    @include mobile-s {
+      left: 45%;
+      transform: translate(-50%);
+    }
+
+    @include mobile-xs {
+      left: 44%;
+    }
   }
 
   &-button-next {

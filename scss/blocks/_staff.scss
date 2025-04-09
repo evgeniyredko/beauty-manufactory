@@ -3,10 +3,32 @@
 .staff {
   margin-top: 100px;
 
+  @include mobile-s {
+    &__title {
+      text-align: center;
+      font-size: 42px;
+    }
+  }
+
+  @include mobile-xs {
+    &__title {
+      font-size: 36px;
+    }
+  }
+
   &__slide-body {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+
+    @include laptop-s {
+      margin-top: 20px;
+    }
+
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__info {
@@ -14,10 +36,33 @@
     margin-top: 184px;
     width: 520px;
     letter-spacing: 0.1em;
+
+    @include laptop-s {
+      margin-top: 0;
+    }
+
+    @include mobile {
+      order: 1;
+      width: 100%;
+    }
   }
 
   &__name {
     font-size: 58px;
+
+    @include tablet {
+      font-size: 40px;
+    }
+
+    @include mobile-s {
+      text-align: center;
+      font-size: 36px;
+    }
+
+    @include mobile-xs {
+      text-align: center;
+      font-size: 28px;
+    }
   }
 
   &__text {
@@ -28,11 +73,36 @@
     font-size: 20px;
     line-height: 1.1;
     letter-spacing: 0.03em;
+
+    @include tablet {
+      font-size: 18px;
+    }
+
+    @include mobile-s {
+      text-align: justify;
+    }
   }
 
   &__image {
     position: relative;
     width: 560px;
+
+    @include laptop-s {
+      width: 400px;
+      display: flex;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+
+    & .swiper-image {
+      align-self: end;
+
+      @include mobile {
+        margin: 0 auto;
+      }
+    }
   }
 
   &__image-background {
@@ -43,9 +113,15 @@
     display: block;
     z-index: -1;
     border-radius: 70px;
+
+    @include laptop-s {
+    }
   }
 
   & .soc1als {
+    margin-bottom: 80px;
+    justify-content: center;
+
     &__list {
       gap: 15px;
       padding: 5px;
