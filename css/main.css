@@ -1444,24 +1444,4 @@ button[aria-label]::before {
 
 body {
   padding-bottom: 500px;
-}
-
-.header {
-  display: none;
-}
-
-.hero {
-  display: none;
-}
-
-.services {
-  display: none;
-}
-
-.benefits {
-  display: none;
-}
-
-.staff {
-  display: none;
 }/*# sourceMappingURL=main.css.map */
