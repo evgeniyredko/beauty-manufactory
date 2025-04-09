@@ -120,7 +120,10 @@
 
   & .soc1als {
     margin-bottom: 80px;
-    justify-content: center;
+
+    @include mobile-s {
+      justify-content: center;
+    }
 
     &__list {
       gap: 15px;

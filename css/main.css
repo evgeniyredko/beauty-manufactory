@@ -1300,7 +1300,11 @@ button[aria-label]::before {
 }
 .staff .soc1als {
   margin-bottom: 80px;
-  justify-content: center;
+}
+@media (width <= 479.98px) {
+  .staff .soc1als {
+    justify-content: center;
+  }
 }
 .staff .soc1als__list {
   gap: 15px;
@@ -1311,7 +1315,17 @@ button[aria-label]::before {
 }
 
 .promo {
-  margin-top: 100px;
+  margin-top: 140px;
+}
+@media (width <= 767.98px) {
+  .promo {
+    margin-top: 100px;
+  }
+}
+@media (width <= 479.98px) {
+  .promo {
+    margin-top: 80px;
+  }
 }
 .promo__inner {
   display: flex;
@@ -1374,7 +1388,7 @@ button[aria-label]::before {
 }
 .promo__button:hover {
   outline: 1px solid var(--color-dark);
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .promo__list {
   display: flex;
@@ -1441,6 +1455,90 @@ button[aria-label]::before {
   .promo__text {
     font-size: 20px;
   }
+}
+
+.reviews {
+  margin-top: 140px;
+}
+@media (width <= 767.98px) {
+  .reviews {
+    margin-top: 100px;
+  }
+}
+.reviews__list {
+  margin-top: 100px;
+  display: flex;
+  gap: 48px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (width <= 1279.98px) {
+  .reviews__list {
+    justify-content: space-around;
+  }
+}
+@media (width <= 767.98px) {
+  .reviews__list {
+    margin-top: 60px;
+    gap: 30px;
+  }
+}
+@media (width <= 479.98px) {
+  .reviews__title {
+    text-align: center;
+  }
+}
+.reviews__card {
+  display: grid;
+  grid-template-columns: 85px 255px;
+  grid-template-areas: "image       name" "image       stars" "text        text";
+  background-color: #f4f4f4;
+  padding: 35px 0 40px 30px;
+  width: 388px;
+  border-radius: 30px;
+}
+@media (width <= 1023.98px) {
+  .reviews__card {
+    grid-template-columns: 85px 1fr;
+    width: 100%;
+    padding-right: 30px;
+  }
+}
+@media (width <= 389.98px) {
+  .reviews__card {
+    padding: 30px 20px;
+  }
+}
+.reviews__card--accent {
+  background-color: var(--color-accent);
+}
+@media (width <= 1279.98px) {
+  .reviews__card--accent {
+    background-color: #f4f4f4;
+  }
+}
+.reviews__card-image {
+  grid-area: image;
+  border-radius: 100px;
+}
+.reviews__card-name {
+  margin: 15px 0 0 25px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.reviews__card-stars {
+  grid-area: stars;
+  display: flex;
+  margin: 0 0 15px 22px;
+  gap: 6px;
+}
+.reviews__card-text {
+  margin-top: 24px;
+  grid-area: text;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.12;
+  letter-spacing: -0.05em;
 }
 
 .background-accent {
