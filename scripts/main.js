@@ -31,9 +31,14 @@ const staff_swiper = new Swiper(".staff__slider > .swiper", {
     pauseOnMouseEnter: true,
   },
   breakpoints: {
-    // when window width is >= 320px
-    767: {
+    768: {
+      spaceBetween: 80,
+    },
+    480: {
       spaceBetween: 40,
+    },
+    320: {
+      spaceBetween: 20,
     },
   },
 });
