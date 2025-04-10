@@ -169,14 +169,14 @@
   }
 
   @include tablet {
-    margin-top: 100px;
+    margin-top: 190px;
   }
 
   @include mobile-s {
-    margin-top: 70px;
+    margin-top: 150px;
   }
 
   @include mobile-xs {
-    margin-top: 50px;
+    margin-top: 120px;
   }
 }

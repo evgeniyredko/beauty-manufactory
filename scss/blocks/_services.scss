@@ -1,14 +1,14 @@
 @use "../helpers/" as *;
 
 .services {
-  margin-top: 170px;
+  padding-top: 170px;
 
   @include tablet {
-    margin-top: 120px;
+    padding-top: 120px;
   }
 
   @include mobile-s {
-    margin-top: 100px;
+    padding-top: 100px;
   }
 
   &__title {
