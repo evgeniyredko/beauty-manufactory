@@ -1532,6 +1532,20 @@ button[aria-label]::before {
   margin: 0 0 15px 22px;
   gap: 6px;
 }
+.reviews__card-star {
+  background-image: url(./../../images/reviews/star-accent.svg);
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+.reviews__card-star--light {
+  background-image: url(./../../images/reviews/star-light.svg);
+}
+@media (width <= 1279.98px) {
+  .reviews__card-star--light {
+    background-image: url(./../../images/reviews/star-accent.svg);
+  }
+}
 .reviews__card-text {
   margin-top: 24px;
   grid-area: text;

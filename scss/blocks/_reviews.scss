@@ -79,6 +79,21 @@
       gap: 6px;
     }
 
+    &-star {
+      background-image: url(./../../images/reviews/star-accent.svg);
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+
+      &--light {
+        background-image: url(./../../images/reviews/star-light.svg);
+
+        @include laptop-s {
+          background-image: url(./../../images/reviews/star-accent.svg);
+        }
+      }
+    }
+
     &-text {
       margin-top: 24px;
       grid-area: text;
