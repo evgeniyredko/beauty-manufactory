@@ -380,11 +380,9 @@ button[aria-label]::before {
 }
 
 /* Задаем высоту большим блокам, чтобы у нас на странице получится скролл */
-li,
+li:not(.header__menu-item, .soc1als__item, .footer__menu-item),
 h2,
 .footer,
-.staff__info,
-.staff__image,
 .contacts__map {
   /* Скроем элемент в начальном состоянии */
   opacity: 0;
@@ -395,8 +393,6 @@ li.element-show,
 h1.element-show,
 h2.element-show,
 .footer.element-show,
-.staff__info.element-show,
-.staff__image.element-show,
 .contacts__map.element-show {
   opacity: 1;
   transition: all 1s;

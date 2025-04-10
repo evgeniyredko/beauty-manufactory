@@ -25,7 +25,7 @@ let options = {
 };
 let observer = new IntersectionObserver(onEntry, options);
 let elements = document.querySelectorAll(
-  "h2, li, .footer, .staff__info, .staff__image, .contacts__map"
+  "h2, li:not(.header__menu-item, .soc1als__item, .footer__menu-item), .footer, .contacts__map"
 );
 
 for (let elm of elements) {
