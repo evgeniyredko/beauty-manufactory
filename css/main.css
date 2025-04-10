@@ -1541,6 +1541,116 @@ button[aria-label]::before {
   letter-spacing: -0.05em;
 }
 
+.contacts {
+  margin-top: 140px;
+}
+@media (width <= 767.98px) {
+  .contacts {
+    margin-top: 100px;
+  }
+}
+.contacts__title {
+  margin-bottom: 110px;
+}
+@media (width <= 1023.98px) {
+  .contacts__title {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.contacts__body {
+  display: flex;
+  gap: 180px;
+  justify-content: space-between;
+}
+@media (width <= 1279.98px) {
+  .contacts__body {
+    gap: 60px;
+  }
+}
+@media (width <= 1023.98px) {
+  .contacts__body {
+    flex-direction: column;
+  }
+}
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  height: auto;
+}
+@media (width <= 1023.98px) {
+  .contacts__info {
+    text-align: center;
+  }
+}
+@media (width <= 479.98px) {
+  .contacts__info {
+    text-align: center;
+    min-width: 100%;
+  }
+}
+.contacts__time {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+.contacts__address {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: -0.04em;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+.contacts__soc1als {
+  margin-top: auto;
+}
+@media (width <= 1023.98px) {
+  .contacts__soc1als {
+    align-self: center;
+  }
+}
+.contacts__soc1als-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contacts__soc1als-link {
+  display: flex;
+  background-color: var(--color-accent);
+  padding: 3px;
+  border-radius: 100px;
+  align-items: center;
+  background-image: url(./../images/contacts/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 94%;
+}
+@media (width <= 1023.98px) {
+  .contacts__soc1als-link {
+    max-width: 350px;
+  }
+}
+.contacts__soc1als-wrapper {
+  display: flex;
+  background-color: var(--color-light);
+  width: 45px;
+  height: 45px;
+  border-radius: 100px;
+  justify-content: center;
+  align-items: center;
+}
+.contacts__soc1als-text {
+  padding: 10px 60px 10px 20px;
+}
+.contacts__map {
+  width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
 .background-accent {
   background-color: var(--color-accent);
 }

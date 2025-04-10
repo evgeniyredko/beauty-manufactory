@@ -1,0 +1,114 @@
+@use "../helpers/" as *;
+
+.contacts {
+  margin-top: 140px;
+
+  @include mobile {
+    margin-top: 100px;
+  }
+
+  &__title {
+    margin-bottom: 110px;
+
+    @include tablet {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__body {
+    display: flex;
+    gap: 180px;
+    justify-content: space-between;
+
+    @include laptop-s {
+      gap: 60px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    min-width: 350px;
+    height: auto;
+
+    @include tablet {
+      text-align: center;
+    }
+
+    @include mobile-s {
+      text-align: center;
+      min-width: 100%;
+    }
+  }
+
+  &__time {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+  }
+
+  &__address {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.39;
+    letter-spacing: -0.04em;
+    text-decoration: underline;
+    margin-bottom: 20px;
+  }
+
+  &__soc1als {
+    margin-top: auto;
+
+    @include tablet {
+      align-self: center;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    &-link {
+      display: flex;
+      background-color: var(--color-accent);
+      padding: 3px;
+      border-radius: 100px;
+      align-items: center;
+      background-image: url(./../images/contacts/arrow.svg);
+      background-repeat: no-repeat;
+      background-position: 94%;
+
+      @include tablet {
+        max-width: 350px;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      background-color: var(--color-light);
+      width: 45px;
+      height: 45px;
+      border-radius: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-text {
+      padding: 10px 60px 10px 20px;
+    }
+  }
+
+  &__map {
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+}
