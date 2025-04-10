@@ -16,14 +16,10 @@
 @use "./blocks/promo";
 @use "./blocks/reviews";
 @use "./blocks/contacts";
+@use "./blocks/footer";
 
 .background-accent {
   background-color: var(--color-accent);
-}
-
-// Временно
-body {
-  padding-bottom: 500px;
 }
 
 // .header {
@@ -51,5 +47,9 @@ body {
 // }
 
 // .reviews {
+//   display: none;
+// }
+
+// .contacts {
 //   display: none;
 // }
