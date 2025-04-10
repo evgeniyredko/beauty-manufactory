@@ -356,6 +356,53 @@ button[aria-label]::before {
   content: "";
 }
 
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+/* Задаем высоту большим блокам, чтобы у нас на странице получится скролл */
+li,
+h2,
+.footer,
+.staff__info,
+.staff__image,
+.contacts__map {
+  /* Скроем элемент в начальном состоянии */
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+li.element-show,
+h1.element-show,
+h2.element-show,
+.footer.element-show,
+.staff__info.element-show,
+.staff__image.element-show,
+.contacts__map.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
 .logo {
   position: relative;
   height: 45px;
@@ -379,6 +426,8 @@ button[aria-label]::before {
 .header {
   z-index: 10;
   background-color: var(--color-light);
+  position: relative;
+  animation: showTop 1s;
 }
 @media (width <= 767.98px) {
   .header {
@@ -602,7 +651,9 @@ button[aria-label]::before {
   }
 }
 .hero__title {
+  position: relative;
   max-width: 450px;
+  animation: showLeft 1s;
 }
 @media (width <= 1279.98px) {
   .hero__title {
@@ -631,6 +682,8 @@ button[aria-label]::before {
   font-size: 34px;
   max-width: 500px;
   line-height: 1.2;
+  position: relative;
+  animation: showRight 1s;
 }
 @media (width <= 1279.98px) {
   .hero__description {
@@ -657,6 +710,9 @@ button[aria-label]::before {
   display: flex;
   gap: 25px;
   font-size: 24px;
+  max-width: 450px;
+  position: relative;
+  animation: showLeft 1s;
 }
 @media (width <= 767.98px) {
   .hero__button-list {
@@ -709,6 +765,8 @@ button[aria-label]::before {
   border-radius: 60px;
   width: 620px;
   height: 590px;
+  position: relative;
+  animation: showRight 1s;
 }
 @media (width <= 1279.98px) {
   .hero__slider {
@@ -1812,4 +1870,44 @@ button[aria-label]::before {
 
 .background-accent {
   background-color: var(--color-accent);
+}
+
+@keyframes showLeft {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+@keyframes showRight {
+  0% {
+    right: -100%;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+@keyframes showTop {
+  0% {
+    top: -200px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
 }/*# sourceMappingURL=main.css.map */

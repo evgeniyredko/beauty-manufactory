@@ -1,6 +1,37 @@
 // import "./typed.js"; // Библиотека для печатания текста
 import Header from "./Header.js";
 
+// Прелоадер
+window.onload = function () {
+  document.body.classList.add("loaded_hiding");
+  window.setTimeout(function () {
+    document.body.classList.add("loaded");
+    document.body.classList.remove("loaded_hiding");
+  }, 500);
+};
+
+// Плавная анимация появления блоков
+function onEntry(entry) {
+  entry.forEach((change) => {
+    if (change.isIntersecting) {
+      change.target.classList.add("element-show");
+    }
+  });
+}
+
+// Список блоков на которые повесится анимация
+let options = {
+  threshold: [0.2],
+};
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll(
+  "h2, li, .footer, .staff__info, .staff__image, .contacts__map"
+);
+
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
 // Слайдер Swiper в Hero
 const hero_swiper = new Swiper(".hero__slider > .swiper", {
   // Optional parameters
