@@ -90,6 +90,7 @@
 
     @include mobile {
       justify-content: center;
+      max-width: 100%;
     }
 
     @include mobile-xs {

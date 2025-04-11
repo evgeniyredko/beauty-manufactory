@@ -711,6 +711,7 @@ h2.element-show,
 @media (width <= 767.98px) {
   .hero__button-list {
     justify-content: center;
+    max-width: 100%;
   }
 }
 @media (width <= 389.98px) {
