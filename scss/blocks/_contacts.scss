@@ -86,6 +86,11 @@
       background-repeat: no-repeat;
       background-position: 94%;
 
+      &:hover {
+        outline: 1px solid var(--color-dark);
+        transform: scale(1.05);
+      }
+
       @include tablet {
         max-width: 350px;
       }
