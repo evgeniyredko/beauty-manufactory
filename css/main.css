@@ -1464,7 +1464,7 @@ h2.element-show,
 }
 .promo__button:hover {
   outline: 1px solid var(--color-dark);
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 .promo__list {
   display: flex;
