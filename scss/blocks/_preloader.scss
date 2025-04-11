@@ -25,7 +25,12 @@
 
 /* Задаем высоту большим блокам, чтобы у нас на странице получится скролл */
 
-li:not(.header__menu-item, .soc1als__item, .footer__menu-item),
+li:not(
+    .header__menu-item,
+    .soc1als__item,
+    .hero__button-item,
+    .footer__menu-item
+  ),
 h2,
 .staff__slider,
 .footer,
