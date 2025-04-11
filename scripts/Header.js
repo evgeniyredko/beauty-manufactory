@@ -1,21 +1,3 @@
-function getCookie(name) {
-  var matches = document.cookie.match(
-    new RegExp(
-      "(?:^|; )" +
-        name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, "\\$1") +
-        "=([^;]*)"
-    )
-  );
-  return matches ? decodeURIComponent(matches[1]) : undefined;
-}
-
-if (getCookie("theme") == "dark") {
-  var theme = document.querySelector("[data-js-theme]");
-  theme.classList.add("dark-theme");
-  var active = document.querySelector("[data-js-theme-active]");
-  active.classList.add("theme__active--dark");
-}
-
 class Header {
   selectors = {
     root: "[data-js-header]",

@@ -15,6 +15,8 @@
   }
 
   &__info {
+    position: relative;
+    animation: showLeft 1s;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -35,9 +37,7 @@
   }
 
   &__title {
-    position: relative;
     max-width: 450px;
-    animation: showLeft 1s;
 
     @include laptop-s {
       max-width: 390px;
@@ -64,9 +64,6 @@
     max-width: 500px;
     line-height: 1.2;
 
-    position: relative;
-    animation: showRight 1s;
-
     @include laptop-s {
       font-size: 26px;
       max-width: 350px;
@@ -90,8 +87,6 @@
     gap: 25px;
     font-size: 24px;
     max-width: 450px;
-    position: relative;
-    animation: showLeft 1s;
 
     @include mobile {
       justify-content: center;

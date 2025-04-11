@@ -627,6 +627,8 @@ h2.element-show,
   }
 }
 .hero__info {
+  position: relative;
+  animation: showLeft 1s;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -649,9 +651,7 @@ h2.element-show,
   }
 }
 .hero__title {
-  position: relative;
   max-width: 450px;
-  animation: showLeft 1s;
 }
 @media (width <= 1279.98px) {
   .hero__title {
@@ -680,8 +680,6 @@ h2.element-show,
   font-size: 34px;
   max-width: 500px;
   line-height: 1.2;
-  position: relative;
-  animation: showRight 1s;
 }
 @media (width <= 1279.98px) {
   .hero__description {
@@ -709,8 +707,6 @@ h2.element-show,
   gap: 25px;
   font-size: 24px;
   max-width: 450px;
-  position: relative;
-  animation: showLeft 1s;
 }
 @media (width <= 767.98px) {
   .hero__button-list {
@@ -899,6 +895,8 @@ h2.element-show,
 }
 .services__title {
   display: inline;
+  position: relative;
+  animation: showBottom 1s;
 }
 @media (width <= 479.98px) {
   .services__title {
@@ -911,6 +909,8 @@ h2.element-show,
   font-weight: 300;
   font-size: 72px;
   line-height: 0.6;
+  position: relative;
+  animation: showBottom 1s;
 }
 @media (width <= 1023.98px) {
   .services__muted {
@@ -1906,6 +1906,19 @@ h2.element-show,
   }
   100% {
     top: 0;
+    opacity: 1;
+  }
+}
+@keyframes showBottom {
+  0% {
+    bottom: -200px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    bottom: 0;
     opacity: 1;
   }
 }/*# sourceMappingURL=main.css.map */

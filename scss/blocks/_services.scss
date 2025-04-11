@@ -13,6 +13,8 @@
 
   &__title {
     display: inline;
+    position: relative;
+    animation: showBottom 1s;
 
     @include mobile-s {
       text-align: center;
@@ -25,6 +27,8 @@
     font-weight: 300;
     font-size: 72px;
     line-height: 0.6;
+    position: relative;
+    animation: showBottom 1s;
 
     @include tablet {
       font-size: 60px;
