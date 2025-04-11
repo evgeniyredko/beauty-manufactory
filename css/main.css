@@ -387,6 +387,7 @@ li:not(.header__menu-item,
 h2,
 .staff__slider,
 .footer,
+.contacts__info,
 .contacts__map {
   /* Скроем элемент в начальном состоянии */
   opacity: 0;
@@ -398,6 +399,7 @@ h1.element-show,
 h2.element-show,
 .staff__slider.element-show,
 .footer.element-show,
+.contacts__info.element-show,
 .contacts__map.element-show {
   opacity: 1;
   transition: all 1s;
