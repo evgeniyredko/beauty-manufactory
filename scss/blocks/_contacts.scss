@@ -9,10 +9,21 @@
 
   &__title {
     margin-bottom: 110px;
+    width: fit-content;
+
+    &::after {
+      bottom: 10px;
+    }
 
     @include tablet {
-      text-align: center;
+      margin-inline: auto;
       margin-bottom: 60px;
+    }
+
+    @include mobile-s {
+      &::after {
+        bottom: 8px;
+      }
     }
   }
 

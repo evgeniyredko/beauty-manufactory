@@ -24,9 +24,19 @@
     }
   }
 
-  @include mobile-s {
-    &__title {
-      text-align: center;
+  &__title {
+    width: fit-content;
+
+    &::after {
+      bottom: 10px;
+    }
+
+    @include mobile-s {
+      margin-inline: auto;
+
+      &::after {
+        bottom: 8px;
+      }
     }
   }
 

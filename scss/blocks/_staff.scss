@@ -7,10 +7,19 @@
     padding-top: 100px;
   }
 
-  @include mobile-s {
-    &__title {
-      text-align: center;
+  &__title {
+    width: fit-content;
+
+    &::after {
+      bottom: 10px;
+    }
+
+    @include mobile-s {
+      margin-inline: auto;
       font-size: 42px;
+      &::after {
+        bottom: 5px;
+      }
     }
   }
 

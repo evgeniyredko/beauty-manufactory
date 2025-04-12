@@ -356,6 +356,20 @@ button[aria-label]::before {
   content: "";
 }
 
+.underline {
+  position: relative;
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 3px;
+  width: 100%;
+  height: 25%;
+  z-index: -1;
+  background-color: var(--color-accent);
+}
+
 .preloader {
   /*фиксированное позиционирование*/
   position: fixed;
@@ -903,11 +917,15 @@ h2.element-show,
   display: inline;
   position: relative;
   animation: showBottom 1s;
+  width: fit-content;
 }
 @media (width <= 479.98px) {
   .services__title {
-    text-align: center;
+    margin-inline: auto;
     display: block;
+  }
+  .services__title::after {
+    bottom: 8px;
   }
 }
 .services__muted {
@@ -1259,10 +1277,19 @@ h2.element-show,
     padding-top: 100px;
   }
 }
+.staff__title {
+  width: fit-content;
+}
+.staff__title::after {
+  bottom: 10px;
+}
 @media (width <= 479.98px) {
   .staff__title {
-    text-align: center;
+    margin-inline: auto;
     font-size: 42px;
+  }
+  .staff__title::after {
+    bottom: 5px;
   }
 }
 @media (width <= 389.98px) {
@@ -1559,9 +1586,18 @@ h2.element-show,
     gap: 30px;
   }
 }
+.reviews__title {
+  width: fit-content;
+}
+.reviews__title::after {
+  bottom: 10px;
+}
 @media (width <= 479.98px) {
   .reviews__title {
-    text-align: center;
+    margin-inline: auto;
+  }
+  .reviews__title::after {
+    bottom: 8px;
   }
 }
 .reviews__card {
@@ -1641,11 +1677,20 @@ h2.element-show,
 }
 .contacts__title {
   margin-bottom: 110px;
+  width: fit-content;
+}
+.contacts__title::after {
+  bottom: 10px;
 }
 @media (width <= 1023.98px) {
   .contacts__title {
-    text-align: center;
+    margin-inline: auto;
     margin-bottom: 60px;
+  }
+}
+@media (width <= 479.98px) {
+  .contacts__title::after {
+    bottom: 8px;
   }
 }
 .contacts__body {

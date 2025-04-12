@@ -15,10 +15,15 @@
     display: inline;
     position: relative;
     animation: showBottom 1s;
+    width: fit-content;
 
     @include mobile-s {
-      text-align: center;
+      margin-inline: auto;
       display: block;
+
+      &::after {
+        bottom: 8px;
+      }
     }
   }
 
