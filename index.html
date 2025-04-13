@@ -2,8 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/favicon.ico"
+      type="image/ico"
+    />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -19,11 +28,11 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./images/favicon-16x16.png"
+      href="./images/favicon/favicon-16x16.png"
     />
     <link
       rel="apple-touch-icon-precomposed"
-      href="./images/apple-touch-icon.png"
+      href="./images/favicon/apple-touch-icon.png"
     />
     <title>Мануфактура красоты | Главная страница</title>
     <meta
@@ -32,6 +41,12 @@
     по доступным ценам. Уютная атмосфера и индивидуальный подход обеспечат
     комфорт и достижение желаемого результата."
     />
+    <meta property="og:title" content="Заголовок" />
+    <meta
+      property="og:url"
+      content="https://evgeniyredko.github.io/beauty-manufactory/"
+    />
+    <meta property="og:image" content="Вставить картинку" />
     <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
@@ -767,7 +782,7 @@
         <div class="contacts__inner">
           <h2 class="contacts__title underline">Контакты</h2>
           <div class="contacts__body">
-            <div class="contacts__info">
+            <address class="contacts__info">
               <div class="contacts__time">
                 Часы работы: Пн-Вс с 9.00 - 22:00
               </div>
@@ -832,7 +847,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </address>
             <div class="contacts__map">
               <!-- <iframe
                 id="map_683603229"
