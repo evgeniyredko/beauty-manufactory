@@ -28,6 +28,10 @@
     @include tablet {
       gap: 40px;
     }
+
+    @include mobile {
+      gap: 30px;
+    }
   }
 
   &__item {

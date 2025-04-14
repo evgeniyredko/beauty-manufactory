@@ -20,10 +20,6 @@
     @include mobile-s {
       margin-inline: auto;
       display: block;
-
-      &::after {
-        bottom: 8px;
-      }
     }
   }
 
@@ -40,10 +36,6 @@
     }
 
     @include mobile {
-      font-size: 48px;
-    }
-
-    @include mobile-s {
       display: none;
     }
   }

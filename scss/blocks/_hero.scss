@@ -37,7 +37,7 @@
   }
 
   &__title {
-    max-width: 450px;
+    max-width: fit-content;
 
     @include laptop-s {
       max-width: 390px;
@@ -50,11 +50,18 @@
     }
 
     @include mobile {
-      max-width: 100%;
+      width: fit-content;
+      margin-inline: auto;
     }
 
     @include mobile-s {
       font-size: 38px;
+
+      & .underline {
+        &::after {
+          bottom: -3px;
+        }
+      }
     }
   }
 

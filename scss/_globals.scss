@@ -59,6 +59,7 @@ h2,
   font-weight: 300;
   font-size: 72px;
   letter-spacing: -0.03em;
+  line-height: 1;
 
   @include tablet {
     font-size: 60px;
@@ -143,11 +144,23 @@ button {
     content: "";
 
     position: absolute;
-    left: 0px;
-    bottom: 3px;
+    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 25%;
+    height: 25px;
     z-index: -1;
     background-color: var(--color-accent);
+
+    @include tablet {
+      height: 18px;
+    }
+
+    @include mobile {
+      height: 15px;
+    }
+
+    @include mobile-s {
+      height: 15px;
+    }
   }
 }

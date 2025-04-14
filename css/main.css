@@ -298,6 +298,7 @@ h2,
   font-weight: 300;
   font-size: 72px;
   letter-spacing: -0.03em;
+  line-height: 1;
 }
 @media (width <= 1023.98px) {
   h2,
@@ -362,12 +363,27 @@ button[aria-label]::before {
 .underline::after {
   content: "";
   position: absolute;
-  left: 0px;
-  bottom: 3px;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: 25%;
+  height: 25px;
   z-index: -1;
   background-color: var(--color-accent);
+}
+@media (width <= 1023.98px) {
+  .underline::after {
+    height: 18px;
+  }
+}
+@media (width <= 767.98px) {
+  .underline::after {
+    height: 15px;
+  }
+}
+@media (width <= 479.98px) {
+  .underline::after {
+    height: 15px;
+  }
 }
 
 .preloader {
@@ -670,7 +686,7 @@ h2.element-show,
   }
 }
 .hero__title {
-  max-width: 450px;
+  max-width: fit-content;
 }
 @media (width <= 1279.98px) {
   .hero__title {
@@ -686,12 +702,16 @@ h2.element-show,
 }
 @media (width <= 767.98px) {
   .hero__title {
-    max-width: 100%;
+    width: fit-content;
+    margin-inline: auto;
   }
 }
 @media (width <= 479.98px) {
   .hero__title {
     font-size: 38px;
+  }
+  .hero__title .underline::after {
+    bottom: -3px;
   }
 }
 .hero__description {
@@ -924,9 +944,6 @@ h2.element-show,
     margin-inline: auto;
     display: block;
   }
-  .services__title::after {
-    bottom: 8px;
-  }
 }
 .services__muted {
   color: #d2d2d2;
@@ -942,11 +959,6 @@ h2.element-show,
   }
 }
 @media (width <= 767.98px) {
-  .services__muted {
-    font-size: 48px;
-  }
-}
-@media (width <= 479.98px) {
   .services__muted {
     display: none;
   }
@@ -1168,6 +1180,11 @@ h2.element-show,
     gap: 40px;
   }
 }
+@media (width <= 767.98px) {
+  .benefits__list {
+    gap: 30px;
+  }
+}
 .benefits__item {
   display: flex;
   flex-direction: column;
@@ -1280,16 +1297,10 @@ h2.element-show,
 .staff__title {
   width: fit-content;
 }
-.staff__title::after {
-  bottom: 10px;
-}
 @media (width <= 479.98px) {
   .staff__title {
     margin-inline: auto;
     font-size: 42px;
-  }
-  .staff__title::after {
-    bottom: 5px;
   }
 }
 @media (width <= 389.98px) {
@@ -1589,15 +1600,9 @@ h2.element-show,
 .reviews__title {
   width: fit-content;
 }
-.reviews__title::after {
-  bottom: 10px;
-}
 @media (width <= 479.98px) {
   .reviews__title {
     margin-inline: auto;
-  }
-  .reviews__title::after {
-    bottom: 8px;
   }
 }
 .reviews__card {
@@ -1679,18 +1684,10 @@ h2.element-show,
   margin-bottom: 110px;
   width: fit-content;
 }
-.contacts__title::after {
-  bottom: 10px;
-}
 @media (width <= 1023.98px) {
   .contacts__title {
     margin-inline: auto;
     margin-bottom: 60px;
-  }
-}
-@media (width <= 479.98px) {
-  .contacts__title::after {
-    bottom: 8px;
   }
 }
 .contacts__body {
@@ -1922,6 +1919,108 @@ h2.element-show,
   text-underline-offset: 4px;
 }
 
+.external {
+  margin-top: 140px;
+}
+@media (width <= 1023.98px) {
+  .external {
+    margin-top: 120px;
+  }
+}
+@media (width <= 767.98px) {
+  .external {
+    margin-top: 100px;
+  }
+}
+.external__title {
+  width: fit-content;
+  margin-bottom: 60px;
+}
+@media (width <= 1023.98px) {
+  .external__title {
+    margin-bottom: 30px;
+  }
+}
+@media (width <= 479.98px) {
+  .external__title {
+    margin-inline: auto;
+    text-align: center;
+    width: min-content;
+  }
+}
+.external__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (width <= 1279.98px) {
+  .external__list {
+    gap: 40px;
+  }
+}
+@media (width <= 767.98px) {
+  .external__list {
+    gap: 30px;
+  }
+}
+@media (width <= 1279.98px) {
+  .external__item {
+    width: 100%;
+  }
+}
+.external-card {
+  display: flex;
+  flex-direction: column;
+  width: 367px;
+  padding: 40px 30px;
+  gap: 28px;
+  background-color: #f4f4f4;
+  border-radius: 30px;
+  height: 100%;
+}
+@media (width <= 1279.98px) {
+  .external-card {
+    width: 100%;
+  }
+}
+@media (width <= 479.98px) {
+  .external-card {
+    padding-right: 30px;
+    gap: 25px;
+  }
+}
+.external-card__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  margin-right: 10px;
+}
+@media (width <= 479.98px) {
+  .external-card__title {
+    text-align: center;
+  }
+}
+.external-card__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.03em;
+}
+@media (width <= 479.98px) {
+  .external-card__text {
+    text-align: justify;
+  }
+}
+.external-card--accent {
+  background-color: var(--color-accent);
+}
+
+@media (width <= 767.98px) {
+  .underline::after {
+    display: none;
+  }
+}
 .background-accent {
   background-color: var(--color-accent);
 }

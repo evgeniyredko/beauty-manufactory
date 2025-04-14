@@ -1,0 +1,103 @@
+@use "../helpers/" as *;
+
+.external {
+  margin-top: 140px;
+
+  @include tablet {
+    margin-top: 120px;
+  }
+
+  @include mobile {
+    margin-top: 100px;
+  }
+
+  &__title {
+    width: fit-content;
+    margin-bottom: 60px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+
+    @include mobile-s {
+      margin-inline: auto;
+      text-align: center;
+      width: min-content;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @include laptop-s {
+      gap: 40px;
+    }
+
+    @include mobile {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    @include laptop-s {
+      width: 100%;
+    }
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    width: 367px;
+    padding: 40px 30px;
+    gap: 28px;
+    background-color: #f4f4f4;
+    border-radius: 30px;
+    height: 100%;
+
+    @include laptop-s {
+      width: 100%;
+    }
+
+    @include mobile-s {
+      padding-right: 30px;
+      gap: 25px;
+    }
+
+    &__title {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.2;
+      letter-spacing: 0;
+      margin-right: 10px;
+
+      @include mobile-s {
+        text-align: center;
+      }
+    }
+
+    &__text {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.11;
+      letter-spacing: -0.03em;
+
+      @include mobile-s {
+        text-align: justify;
+      }
+    }
+
+    &--accent {
+      background-color: var(--color-accent);
+    }
+  }
+}
+
+@include mobile {
+  .underline {
+    &::after {
+      display: none;
+    }
+  }
+}

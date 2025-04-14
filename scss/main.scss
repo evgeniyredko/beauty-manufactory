@@ -19,6 +19,8 @@
 @use "./blocks/contacts";
 @use "./blocks/footer";
 
+@use "./blocks/external";
+
 .background-accent {
   background-color: var(--color-accent);
 }
