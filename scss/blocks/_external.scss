@@ -94,10 +94,12 @@
   }
 }
 
-@include mobile {
-  .underline {
-    &::after {
-      display: none;
+.facial-care {
+  @include mobile {
+    & .underline {
+      &::after {
+        display: none;
+      }
     }
   }
 }

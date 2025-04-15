@@ -2017,10 +2017,11 @@ h2.element-show,
 }
 
 @media (width <= 767.98px) {
-  .underline::after {
+  .facial-care .underline::after {
     display: none;
   }
 }
+
 .background-accent {
   background-color: var(--color-accent);
 }
