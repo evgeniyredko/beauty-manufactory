@@ -22,7 +22,11 @@
     @include mobile-s {
       margin-inline: auto;
       text-align: center;
-      width: min-content;
+      width: 100%;
+    }
+
+    @include mobile-xs {
+      font-size: 32px;
     }
   }
 
@@ -30,9 +34,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    row-gap: 60px;
 
     @include laptop-s {
       gap: 40px;
+    }
+
+    @include tablet {
+      row-gap: 30px;
     }
 
     @include mobile {
@@ -41,8 +50,20 @@
   }
 
   &__item {
+    &:nth-child(3n + 2) .external-card {
+      background-color: var(--color-accent);
+    }
+
     @include laptop-s {
       width: 100%;
+
+      &:nth-child(3n + 2) .external-card {
+        background-color: #f4f4f4;
+      }
+
+      &:nth-child(even) .external-card {
+        background-color: var(--color-accent);
+      }
     }
   }
 
@@ -87,14 +108,10 @@
         text-align: justify;
       }
     }
-
-    &--accent {
-      background-color: var(--color-accent);
-    }
   }
 }
 
-.facial-care {
+.external-page {
   @include mobile {
     & .underline {
       &::after {
