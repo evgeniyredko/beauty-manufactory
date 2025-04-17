@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon/favicon.ico"
+      type="image/ico"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <title>Уход для волос | Мануфактура красоты</title>
+    <meta
+      name="description"
+      content="Профессиональные косметологические услуги
+    по доступным ценам. Уютная атмосфера и индивидуальный подход обеспечат
+    комфорт и достижение желаемого результата."
+    />
+    <meta
+      property="og:title"
+      content="Мануфактура красоты | Создаём красоту учитывая индивидуальные потребности наших клиентов"
+    />
+    <meta
+      property="og:url"
+      content="https://evgeniyredko.github.io/beauty-manufactory/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image" content="./images/og/1200x630.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="./images/og/400x400.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./scripts/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header" data-js-header>
+      <div class="header__inner container">
+        <a class="logo" href="./">
+          <img class="logo__image" src="./images/logo.png" alt="Логотип" />
+        </a>
+        <div class="header__overlay">
+          <nav class="header__menu" data-js-header-menu>
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="./">Главная</a>
+              </li>
+              <li class="header__menu-item">
+                <a class="header__menu-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="soc1als">
+            <div class="soc1als__title">Связаться</div>
+            <ul class="soc1als__list">
+              <li class="soc1als__item">
+                <a class="soc1als__link" href="tel:+79196129225">
+                  <img
+                    class="soc1als__image"
+                    src="./images/socials/phone.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a
+                  class="soc1als__link"
+                  href="https://vk.com/manufactyrak"
+                  target="_blank"
+                >
+                  <img
+                    class="soc1als__image"
+                    src="./images/socials/vk.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="soc1als__item">
+                <a
+                  class="soc1als__link"
+                  href="https://api.whatsapp.com/send/?phone=79196129225&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%A5%D0%BE%D1%87%D1%83+%D0%B7%D0%B0%D0%B4%D0%B0%D1%82%D1%8C+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%21%0A%0A%0A%0A&type=phone_number&app_absent=0"
+                  target="_blank"
+                >
+                  <img
+                    class="soc1als__image"
+                    src="./images/socials/whatsapp.svg"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="burger-button visible-mobile"
+          aria-label="Open menu"
+          title="Open menu"
+          data-js-header-burger-button
+        >
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+          <span class="burger-button__line"></span>
+        </button>
+      </div>
+    </header>
+    <main class="external-page">
+      <section class="hero container" id="hero">
+        <div class="hero__inner">
+          <div class="hero__body">
+            <div class="hero__info">
+              <h1 class="hero__title">
+                <span class="underline">Уход для волос</span>
+              </h1>
+              <p class="hero__description">
+                Включает в себя различные процедуры, которые направлены на
+                поддержание здоровья и красоты волос
+              </p>
+              <ul class="hero__button-list">
+                <li class="hero__button-item">
+                  <a
+                    class="hero__button background-accent"
+                    href="https://api.whatsapp.com/send/?phone=79196129225&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%A5%D0%BE%D1%87%D1%83+%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F+%D0%BA+%D0%92%D0%B0%D0%BC+%D0%BD%D0%B0+%D1%83%D1%85%D0%BE%D0%B4+%D0%B4%D0%BB%D1%8F+%D0%B2%D0%BE%D0%BB%D0%BE%D1%81%21%0A%0A%0A%0A&type=phone_number&app_absent=0"
+                    target="_blank"
+                  >
+                    Записаться
+                  </a>
+                </li>
+                <li class="hero__button-item">
+                  <a
+                    class="hero__button hero__button--light"
+                    href="https://api.whatsapp.com/send/?phone=79196129225&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%A5%D0%BE%D1%87%D1%83+%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B0%D1%82%D1%8C%D1%81%D1%8F+%D0%BA+%D0%92%D0%B0%D0%BC+%D0%BD%D0%B0+%D0%BA%D0%BE%D0%BD%D1%81%D1%83%D0%BB%D1%8C%D1%82%D0%B0%D1%86%D0%B8%D1%8E%21%0A%0A%0A%0A&type=phone_number&app_absent=0"
+                    target="_blank"
+                  >
+                    Консультация
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="hero__slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-image"
+                      src="./images/hero/slider/image-1.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-image"
+                      src="./images/hero/slider/image-2.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="swiper-image"
+                      src="./images/hero/slider/image-3.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="external container">
+        <div class="external__inner">
+          <h2 class="external__title underline">Лечебные процедуры</h2>
+          <ul class="external__list">
+            <li class="external__item">
+              <article class="external__card external-card">
+                <h3 class="external-card__title">Озонотерапия</h3>
+                <p class="external-card__text">
+                  Насыщение кислородом кожи головы для улучшения состояния
+                  волосяных луковиц
+                </p>
+              </article>
+            </li>
+            <li class="external__item">
+              <article
+                class="external__card external-card external-card--accent"
+              >
+                <h3 class="external-card__title">Плазмолифтинг</h3>
+                <p class="external-card__text">
+                  Введение собственной плазмы пациента, обогащенной
+                  тромбоцитами, для стимуляции волосяных фолликулов
+                </p>
+              </article>
+            </li>
+            <li class="external__item">
+              <article class="external__card external-card">
+                <h3 class="external-card__title">Дарсонвализация</h3>
+                <p class="external-card__text">
+                  Воздействие слабых электрических разрядов для улучшения
+                  кровообращения
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="external container">
+        <div class="external__inner">
+          <h2 class="external__title underline">Восстанавливающие процедуры</h2>
+          <ul class="external__list">
+            <li class="external__item">
+              <article class="external__card external-card">
+                <h3 class="external-card__title">Ботокс для волос</h3>
+                <p class="external-card__text">
+                  Глубокое питание и увлажнение с эффектом разглаживания
+                </p>
+              </article>
+            </li>
+            <li class="external__item">
+              <article
+                class="external__card external-card external-card--accent"
+              >
+                <h3 class="external-card__title">Нанопластика</h3>
+                <p class="external-card__text">
+                  Альтернатива кератиновому выпрямлению, более щадящий способ
+                  оздоровления волос
+                </p>
+              </article>
+            </li>
+            <li class="external__item">
+              <article class="external__card external-card">
+                <h3 class="external-card__title">Ламинирование</h3>
+                <p class="external-card__text">
+                  Покрытие волос защитной пленкой для блеска и сохранения влаги
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="external container">
+        <div class="external__inner">
+          <h2 class="external__title underline">Косметологические процедуры</h2>
+          <ul class="external__list">
+            <li class="external__item">
+              <article class="external__card external-card">
+                <h3 class="external-card__title">SPA-уход за волосами</h3>
+                <p class="external-card__text">
+                  Применение масок, масел и сывороток для питания и увлажнения
+                </p>
+              </article>
+            </li>
+            <li class="external__item">
+              <article
+                class="external__card external-card external-card--accent"
+              >
+                <h3 class="external-card__title">Пилинг кожи головы</h3>
+                <p class="external-card__text">
+                  Очищение от себума, перхоти и ороговевших клеток
+                </p>
+              </article>
+            </li>
+            <li class="external__item">
+              <article class="external__card external-card">
+                <h3 class="external-card__title">Ампульное лечение</h3>
+                <p class="external-card__text">
+                  Интенсивное лечение с применением концентрированных средств
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="external container">
+        <div class="external__inner">
+          <h2 class="external__title underline">Аппаратные терапии</h2>
+          <ul class="external__list">
+            <li class="external__item">
+              <article class="external__card external-card">
+                <h3 class="external-card__title">Лазерная</h3>
+                <p class="external-card__text">
+                  Стимуляция роста волос и укрепление фолликулов/p>
+                </p>
+              </article>
+            </li>
+            <li class="external__item">
+              <article
+                class="external__card external-card external-card--accent"
+              >
+                <h3 class="external-card__title">Ультразвуковая</h3>
+                <p class="external-card__text">
+                  Глубокое проникновение питательных веществ за счет ультразвука
+                </p>
+              </article>
+            </li>
+            <li class="external__item">
+              <article class="external__card external-card">
+                <h3 class="external-card__title">Микротоковая</h3>
+                <p class="external-card__text">
+                  Улучшение обмена веществ в коже головы
+                </p>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contacts container" id="contacts">
+        <div class="contacts__inner">
+          <h2 class="contacts__title underline">Контакты</h2>
+          <div class="contacts__body">
+            <address class="contacts__info">
+              <div class="contacts__time">
+                Часы работы: Пн-Вс с 9.00 - 22:00
+              </div>
+              <a
+                class="contacts__address"
+                href="https://go.2gis.com/cbKVP"
+                target="_blank"
+              >
+                г. Уфа, Калининский район, Первомайская 69 1 этаж
+              </a>
+              <div class="contacts__soc1als">
+                <ul class="contacts__soc1als-list">
+                  <li class="contacts__soc1als-item">
+                    <a class="contacts__soc1als-link" href="tel:+79196129225">
+                      <div class="contacts__soc1als-wrapper">
+                        <img
+                          class="contacts__soc1als-image"
+                          src="./images/socials/phone.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="contacts__soc1als-text">
+                        +7 (919) 612‒92‒25
+                      </div>
+                    </a>
+                  </li>
+                  <li class="contacts__soc1als-item">
+                    <a
+                      class="contacts__soc1als-link"
+                      href="https://vk.com/manufactyrak"
+                      target="_blank"
+                    >
+                      <div class="contacts__soc1als-wrapper">
+                        <img
+                          class="contacts__soc1als-image"
+                          src="./images/socials/vk.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="contacts__soc1als-text">
+                        vk.com/manufactyrak
+                      </div>
+                    </a>
+                  </li>
+                  <li class="contacts__soc1als-item">
+                    <a
+                      class="contacts__soc1als-link"
+                      href="https://api.whatsapp.com/send/?phone=79196129225&text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%21%0A%0A%D0%A5%D0%BE%D1%87%D1%83+%D0%B7%D0%B0%D0%B4%D0%B0%D1%82%D1%8C+%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%21%0A%0A%0A%0A&type=phone_number&app_absent=0"
+                      target="_blank"
+                    >
+                      <div class="contacts__soc1als-wrapper">
+                        <img
+                          class="contacts__soc1als-image"
+                          src="./images/socials/whatsapp.svg"
+                          alt=""
+                        />
+                      </div>
+                      <div class="contacts__soc1als-text">
+                        +7 (919) 612‒92‒25
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </address>
+            <div class="contacts__map">
+              <iframe
+                id="map_683603229"
+                frameborder="0"
+                width="100%"
+                height="400px"
+                sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"
+              ></iframe>
+              <script type="text/javascript">
+                (function (e, t) {
+                  var r = document.getElementById(e);
+                  r.contentWindow.document.open(),
+                    r.contentWindow.document.write(atob(t)),
+                    r.contentWindow.document.close();
+                })(
+                  "map_683603229",
+                  "PGJvZHk+PHN0eWxlPgogICAgICAgIGh0bWwsIGJvZHkgewogICAgICAgICAgICBtYXJnaW46IDA7CiAgICAgICAgICAgIHBhZGRpbmc6IDA7CiAgICAgICAgfQogICAgICAgIGh0bWwsIGJvZHksICNtYXAgewogICAgICAgICAgICB3aWR0aDogMTAwJTsKICAgICAgICAgICAgaGVpZ2h0OiAxMDAlOwogICAgICAgIH0KICAgICAgICAuYnVsbGV0LW1hcmtlciB7CiAgICAgICAgICAgIHdpZHRoOiAyMHB4OwogICAgICAgICAgICBoZWlnaHQ6IDIwcHg7CiAgICAgICAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7CiAgICAgICAgICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7CiAgICAgICAgICAgIGJveC1zaGFkb3c6IDAgMXB4IDNweCAwIHJnYmEoMCwgMCwgMCwgMC4yKTsKICAgICAgICAgICAgYm9yZGVyOiA0cHggc29saWQgIzAyODFmMjsKICAgICAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgICAgIH0KICAgICAgICAucGVybWFuZW50LXRvb2x0aXAgewogICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lOwogICAgICAgICAgICBib3gtc2hhZG93OiBub25lOwogICAgICAgICAgICBib3JkZXI6IG5vbmU7CiAgICAgICAgICAgIHBhZGRpbmc6IDZweCAxMnB4OwogICAgICAgICAgICBjb2xvcjogIzI2MjYyNjsKICAgICAgICB9CiAgICAgICAgLnBlcm1hbmVudC10b29sdGlwOmJlZm9yZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7CiAgICAgICAgfQogICAgICAgIC5kZy1wb3B1cF9oaWRkZW5fdHJ1ZSB7CiAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrOwogICAgICAgIH0KICAgICAgICAubGVhZmxldC1jb250YWluZXIgLmxlYWZsZXQtcG9wdXAgLmxlYWZsZXQtcG9wdXAtY2xvc2UtYnV0dG9uIHsKICAgICAgICAgICAgdG9wOiAwOwogICAgICAgICAgICByaWdodDogMDsKICAgICAgICAgICAgd2lkdGg6IDIwcHg7CiAgICAgICAgICAgIGhlaWdodDogMjBweDsKICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4OwogICAgICAgICAgICBsaW5lLWhlaWdodDogMTsKICAgICAgICB9CiAgICA8L3N0eWxlPjxkaXYgaWQ9Im1hcCI+PC9kaXY+PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIHNyYz0iaHR0cHM6Ly9tYXBzLmFwaS4yZ2lzLnJ1LzIuMC9sb2FkZXIuanM/cGtnPWZ1bGwmYW1wO3NraW49bGlnaHQiPjwvc2NyaXB0PjxzY3JpcHQ+KGZ1bmN0aW9uKGUpe3ZhciB0PUpTT04ucGFyc2UoZSkscj10Lm9yZGVyZWRHZW9tZXRyaWVzLG49dC5tYXBQb3NpdGlvbixhPXQuaXNXaGVlbFpvb21FbmFibGVkO2Z1bmN0aW9uIG8oZSl7cmV0dXJuIGRlY29kZVVSSUNvbXBvbmVudChhdG9iKGUpLnNwbGl0KCIiKS5tYXAoZnVuY3Rpb24oZSl7cmV0dXJuIiUiKygiMDAiK2UuY2hhckNvZGVBdCgwKS50b1N0cmluZygxNikpLnNsaWNlKC0yKX0pLmpvaW4oIiIpKX1ERy50aGVuKGZ1bmN0aW9uKCl7dmFyIGU9REcubWFwKCJtYXAiLHtjZW50ZXI6W24ubGF0LG4ubG9uXSx6b29tOm4uem9vbSxzY3JvbGxXaGVlbFpvb206YSx6b29tQ29udHJvbDohYX0pO0RHLmdlb0pTT04ocix7c3R5bGU6ZnVuY3Rpb24oZSl7dmFyIHQscixuLGEsbztyZXR1cm57ZmlsbENvbG9yOm51bGw9PT0odD1lKXx8dm9pZCAwPT09dD92b2lkIDA6dC5wcm9wZXJ0aWVzLmZpbGxDb2xvcixmaWxsT3BhY2l0eTpudWxsPT09KHI9ZSl8fHZvaWQgMD09PXI/dm9pZCAwOnIucHJvcGVydGllcy5maWxsT3BhY2l0eSxjb2xvcjpudWxsPT09KG49ZSl8fHZvaWQgMD09PW4/dm9pZCAwOm4ucHJvcGVydGllcy5zdHJva2VDb2xvcix3ZWlnaHQ6bnVsbD09PShhPWUpfHx2b2lkIDA9PT1hP3ZvaWQgMDphLnByb3BlcnRpZXMuc3Ryb2tlV2lkdGgsb3BhY2l0eTpudWxsPT09KG89ZSl8fHZvaWQgMD09PW8/dm9pZCAwOm8ucHJvcGVydGllcy5zdHJva2VPcGFjaXR5fX0scG9pbnRUb0xheWVyOmZ1bmN0aW9uKGUsdCl7cmV0dXJuInJhZGl1cyJpbiBlLnByb3BlcnRpZXM/REcuY2lyY2xlKHQsZS5wcm9wZXJ0aWVzLnJhZGl1cyk6REcubWFya2VyKHQse2ljb246ZnVuY3Rpb24oZSl7cmV0dXJuIERHLmRpdkljb24oe2h0bWw6IjxkaXYgY2xhc3M9J2J1bGxldC1tYXJrZXInIHN0eWxlPSdib3JkZXItY29sb3I6ICIrZSsiOyc+PC9kaXY+IixjbGFzc05hbWU6Im92ZXJyaWRlLWRlZmF1bHQiLGljb25TaXplOlsyMCwyMF0saWNvbkFuY2hvcjpbMTAsMTBdfSl9KGUucHJvcGVydGllcy5jb2xvcil9KX0sb25FYWNoRmVhdHVyZTpmdW5jdGlvbihlLHQpe2UucHJvcGVydGllcy5kZXNjcmlwdGlvbiYmdC5iaW5kUG9wdXAobyhlLnByb3BlcnRpZXMuZGVzY3JpcHRpb24pLHtjbG9zZUJ1dHRvbjohMCxjbG9zZU9uRXNjYXBlS2V5OiEwfSksZS5wcm9wZXJ0aWVzLnRpdGxlJiZ0LmJpbmRUb29sdGlwKG8oZS5wcm9wZXJ0aWVzLnRpdGxlKSx7cGVybWFuZW50OiEwLG9wYWNpdHk6MSxjbGFzc05hbWU6InBlcm1hbmVudC10b29sdGlwIn0pfX0pLmFkZFRvKGUpfSl9KSgneyJvcmRlcmVkR2VvbWV0cmllcyI6W3sidHlwZSI6IkZlYXR1cmUiLCJwcm9wZXJ0aWVzIjp7ImNvbG9yIjoiIzYwNTI0NyIsInRpdGxlIjoiMEp6UXNOQzkwWVBSaE5DdzBMclJndEdEMFlEUXNDRFF1dEdBMExEUmdkQyswWUxSaXc9PSIsImRlc2NyaXB0aW9uIjoiIiwiekluZGV4IjoxMDAwMDAwMDAwfSwiZ2VvbWV0cnkiOnsidHlwZSI6IlBvaW50IiwiY29vcmRpbmF0ZXMiOls1Ni4xMDIyMzQsNTQuODEwMTI1XX0sImlkIjo3OTl9XSwibWFwUG9zaXRpb24iOnsibGF0Ijo1NC44MTAxNTUwNzg5NDYxOCwibG9uIjo1Ni4xMDI0MTQxMzExNjQ1Niwiem9vbSI6MTh9LCJpc1doZWVsWm9vbUVuYWJsZWQiOnRydWV9Jyk8L3NjcmlwdD48c2NyaXB0IGFzeW5jPSIiIHNyYz0iaHR0cHM6Ly93d3cuZ29vZ2xldGFnbWFuYWdlci5jb20vZ3RhZy9qcz9pZD1HLVQ4NktNRDAzQzciPjwvc2NyaXB0PjxzY3JpcHQgaWQ9Imdvb2dsZS1hbmFseXRpY3MiPgogICAgICB3aW5kb3cuZGF0YUxheWVyID0gd2luZG93LmRhdGFMYXllciB8fCBbXTsKICAgICAgZnVuY3Rpb24gZ3RhZygpe2RhdGFMYXllci5wdXNoKGFyZ3VtZW50cyk7fQogICAgICBndGFnKCdqcycsIG5ldyBEYXRlKCkpOwogICAgICBndGFnKCdjb25maWcnLCAnRy1UODZLTUQwM0M3JywgeyJjb29raWVfZmxhZ3MiOiJTYW1lU2l0ZT1Ob25lOyBTZWN1cmU7IFBhcnRpdGlvbmVkIiwiY29va2llX3VwZGF0ZSI6ZmFsc2V9KTsKICAgICAgdHJ1ZSAmJiBndGFnKCdldmVudCcsICdmcm9tX2lmcmFtZScpOwogICAgPC9zY3JpcHQ+PC9ib2R5Pg=="
+                );
+              </script>
+              <!-- <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad49a65d8de4dbbb060d04b017855ab58161558ba2c84f91d9c2bc96a7693d054&amp;source=constructor"
+                width="100%"
+                height="400"
+                frameborder="0"
+              ></iframe> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__inner container">
+        <div class="footer__start">
+          <a class="footer__logo logo" href="./">
+            <img class="logo__image" src="./images/logo.png" alt="Логотип" />
+          </a>
+          <nav class="footer__menu">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./">Главная</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Уход для волос</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__end">
+          <a
+            class="footer__button"
+            href="https://evgeniyredko.github.io/"
+            target="_blank"
+            >Сделать сайт</a
+          >
+          <div class="copyright">© Evgeniy Redko, 2025</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
