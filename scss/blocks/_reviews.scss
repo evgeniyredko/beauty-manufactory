@@ -91,7 +91,7 @@
         background-image: url(./../images/reviews/star-light.svg);
 
         @include laptop-s {
-          background-image: url(./../../images/reviews/star-accent.svg);
+          background-image: url(./../images/reviews/star-accent.svg);
         }
       }
     }

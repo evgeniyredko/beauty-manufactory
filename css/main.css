@@ -1660,7 +1660,7 @@ h2.element-show,
 }
 @media (width <= 1279.98px) {
   .reviews__card-star--light {
-    background-image: url(./../../images/reviews/star-accent.svg);
+    background-image: url(./../images/reviews/star-accent.svg);
   }
 }
 .reviews__card-text {
