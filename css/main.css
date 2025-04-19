@@ -1650,13 +1650,13 @@ h2.element-show,
   gap: 6px;
 }
 .reviews__card-star {
-  background-image: url(./../../images/reviews/star-accent.svg);
+  background-image: url(./../images/reviews/star-accent.svg);
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
 }
 .reviews__card-star--light {
-  background-image: url(./../../images/reviews/star-light.svg);
+  background-image: url(./../images/reviews/star-light.svg);
 }
 @media (width <= 1279.98px) {
   .reviews__card-star--light {
